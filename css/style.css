@@ -1,0 +1,498 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #51BAD0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Header and Horizontal Line Container */
+.header-line-container {
+    width: 100%;
+    position: fixed;
+    top: 0; /* Keep at the top of the page */
+    left: 0;
+    z-index: 10; /* Ensure the header is above other elements */
+    position: absolute;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 90px;
+    width: 85%;
+    padding: 10px;
+    background-color: #333;
+    z-index: 20;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.nav-positioning {
+    display: inline-block;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-positioning nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-positioning .tags {
+    text-decoration: none;
+    margin-left: 80px;
+    font-size: 20px;
+    color: white;
+}
+
+.nav-positioning .tags:hover {
+    color: black;
+}
+
+/* Horizontal Line */
+.horizontal-line {
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    height: 10px;
+    position: relative;
+    margin-top: 10px;
+    z-index: 5;
+}
+
+/* Content Section */
+.content {
+    text-align: center;
+    padding: 80px 20px 20px 20px; 
+    width: 80%; 
+    margin-top: 120px;
+}
+
+/* Section holding intro, quotes, and profile */
+.intro-quotes-profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    width: 100%;
+    margin-top: -150px;
+    margin-left: -150px;
+}
+
+.intro-quotes-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.intro-positioning {
+    margin-bottom: 30px;
+}
+
+.greetings {
+    font-size: 80px;
+}
+
+.myname {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.quotes-positioning {
+    margin-top: 20px;
+}
+
+.quotes {
+    font-size: 40px;
+    width: 650px;
+    margin-left: 150px;
+}
+
+.author {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 425px;
+}
+
+/* Profile Image */
+.profile-positioning {
+    display: inline-block;
+    margin-left: -100%;
+    margin-top: 350px;
+    width: 25%; 
+    text-align: center;
+}
+
+.profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+/* About Section Wrapper */
+.about-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 80%; 
+    margin-top: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Name */
+.aboutname {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+/* About Profile Image */
+.aboutprofile {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px; 
+}
+
+.aboutprofile-picture { 
+    width: 200px;
+    height: auto;
+}
+
+/* About Content Positioning */
+.aboutcontent-positioning {
+    text-align: center; 
+    width: 90%; 
+    margin-top: 20px;
+}
+
+/* About Me Content */
+.aboutme-content {
+    font-size: 20px; 
+    line-height: 1.6; 
+    max-width: 1000px; 
+    margin-top: 20px;
+    margin-left: -100px;
+}
+
+.skills-container {
+    width: 90%; 
+    margin-top: 150px; 
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill-item {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.skill-item:hover {
+    background-color: #51BAD0; 
+}
+
+/* Contact Section */
+.contact-method-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%;
+    margin-top: 50px; /
+}
+
+/* Contact Container */
+.contactcontainer {
+    flex: 1;
+    height: 400px;
+    margin-top: 80px;
+    margin-left: -10px;
+    box-sizing: border-box;
+}
+
+/* Method Container */
+.methodcontainer {
+    flex: 1;
+    height: 400px; 
+    margin-top: 80px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    overflow: hidden; 
+}
+
+/* Contact Method Text and Layout */
+.tocontact-picture-positioning {
+    margin-top: 25px;
+    display: flex;
+}
+
+.contactpicture {
+    justify-content: space-between;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+.tocontact {
+    justify-content: space-between;
+    margin-top: 80px;
+    display: inline-block;
+}
+
+.contactmethod {
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: -80px;
+}
+
+.cellphonedisplay {
+    display: inline-block;
+}
+
+.cellphone {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 80px;
+    border-radius: 25%;
+}
+
+.cellphonetext {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.cellphonetextno {
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+.gmaildisplay {
+    position: absolute;
+    display: inline-block;
+}
+
+.gmail {
+    width: 80px;
+    border-radius: 25%;
+    margin-top: 50px;
+    margin-left: 135px;
+}
+
+.emailadd {
+    font-size: 15px;
+    margin-left: 115px;
+}
+
+.email {
+    font-size: 15px;
+    margin-left: 70px;
+}
+
+.github {
+    width: 80px;
+    border-radius: 25%;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.githublink {
+    font-size: 15px;
+    margin-left: 200px;
+}
+
+.githublinkadd {
+    font-size: 15px;
+    margin-left: 150px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .nav-positioning {
+        display: none;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .greetings {
+        font-size: 1.2em;
+    }
+
+    .myname {
+        font-size: 1.8em;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    .quotes {
+        font-size: 1.2em;
+    }
+
+    .author {
+        font-size: 1em;
+    }
+
+    .profile {
+        width: 150px;
+        height: 150px;
+    }
+
+    .aboutprofile {
+        width: 150px;
+        height: 150px;
+    }
+
+    .aboutme-content {
+        font-size: 1em;
+    }
+
+    .contactcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactpicture {
+        max-width: 90%;
+        margin: 20px 0;
+    }
+
+    .methodcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .methodcontainer > div {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    /* Stack profile and intro/quotes vertically on smaller screens */
+    .intro-quotes-profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-positioning {
+        width: 100%; /* Make profile take up full width when stacked */
+        margin-top: 20px;
+    }
+
+    .profile {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .greetings {
+        font-size: 1.1em;
+    }
+
+    .myname {
+        font-size: 1.5em;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    .quotes {
+        font-size: 1em;
+    }
+
+    .author {
+        font-size: 0.9em;
+    }
+
+    .profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    .aboutname {
+        font-size: 1.8em;
+    }
+
+    .aboutme-content {
+        font-size: 0.9em;
+    }
+
+    .methodcontainer img {
+        max-width: 40px;
+    }
+
+    .contactmethod {
+        font-size: 1em;
+    }
+
+    .cellphonetext, .emailadd, .githublink {
+        font-size: 1em;
+    }
+
+    .cellphonetextno, .email, .githublinkadd {
+        font-size: 0.9em;
+    }
+}
